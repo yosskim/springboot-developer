@@ -1,0 +1,42 @@
+spring:
+  jpa:
+    # 전송 쿼리 확인
+    show-sql : true
+    properties:
+      hibernate:
+        format_sql: true
+
+    # 테이블 생성 후에 data.sql 실행
+    defer-datasource-initialization: true
+
+  h2: # H2 콘솔 활성화
+    console:
+      enabled: true
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      image:
+        options:
+          model: gpt-image-1 #dall-e-3
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
+            scope:
+              - email
+              - profile
+
+jwt:
+  issuer: ajufresh@gmail.com
+  secret_key: study-springboot
+
+cloud:
+  aws:
+    region: ap-southeast-2
+    s3:
+      bucket: springboot-developer-yosskim
