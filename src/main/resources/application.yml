@@ -33,10 +33,10 @@ spring:
 
 jwt:
   issuer: ajufresh@gmail.com
-  secret_key: study-springboot
+  secret_key: ${SECRET_KEY}
 
 cloud:
   aws:
     region: ap-southeast-2
     s3:
-      bucket: springboot-developer-yosskim
+      bucket: ${AWS_BUCKET_NAME}
