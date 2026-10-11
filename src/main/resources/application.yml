@@ -39,4 +39,4 @@ cloud:
   aws:
     region: ap-southeast-2
     s3:
-      bucket: 34234242323
+      bucket: springboot-developer-yosskim
