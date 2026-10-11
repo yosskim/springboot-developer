@@ -15,7 +15,7 @@ spring:
 
   ai:
     openai:
-      api-key: ${OPENAI_API_KEY}
+      api-key: 12112121212121212121
       image:
         options:
           model: gpt-image-1 #dall-e-3
@@ -25,18 +25,18 @@ spring:
       client:
         registration:
           google:
-            client-id: ${GOOGLE_CLIENT_ID}
-            client-secret: ${GOOGLE_CLIENT_SECRET}
+            client-id: 121212121212121212
+            client-secret: 34234324343243234423
             scope:
               - email
               - profile
 
 jwt:
   issuer: ajufresh@gmail.com
-  secret_key: ${SECRET_KEY}
+  secret_key: 3423423423423
 
 cloud:
   aws:
     region: ap-southeast-2
     s3:
-      bucket: ${AWS_BUCKET_NAME}
+      bucket: 34234242323
